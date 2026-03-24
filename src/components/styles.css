@@ -1,0 +1,477 @@
+/* ========= HEADER ========= */
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    position: relative;
+    max-width: 4000px; 
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 100;
+}
+
+.logo-button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    background-image: url('/public/imagens/logo_Have_Living.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 60px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #004225;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sell-button {
+    background-color: #004225;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sell-button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+    color: #004225;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #004225;
+    z-index: 101;
+}
+
+
+/* ========= BANNER ========= */
+.banner {
+    height: 40vw;
+    background-image: url(../../public/imagens/Home_page_image.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.banner div {
+    font-weight: bold;
+    color: #BB3B0E;
+    text-align:right;
+    padding: 9vw 40px;
+}
+
+.banner h2 {
+    font-weight: bold;
+    font-size:190%;
+}
+
+.banner div h2 span {
+    color: inherit;
+    display: block;
+}
+
+
+/* ========= CARDS HP ========= */
+.house_card_hp {
+    background-color: rgba(245, 245, 220, 0.9); 
+    border-radius: 5px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    padding: 20px; 
+    max-width: 500px; 
+}
+
+.house_card_hp .house_img {
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.house_title {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 20px; 
+    margin-bottom: 15px;
+}
+
+.house_title h3 h4 {
+    font-size: 200px;
+}
+
+.house_location {
+    display: flex;
+    text-align: center;
+    gap: 2px; 
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.house_location .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.house_description {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.house_description .item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #BB3B0E; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    background-color: rgba(245, 245, 245, 0.9); 
+}
+
+.house_description .icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* ========= CARDS B ========= */
+.buy_card_b {
+    background-color: rgba(245, 245, 222, 0.9); 
+    border-radius: 5px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    padding: 9px; 
+    max-width: 500px; 
+}
+
+.buy_card_b .house_img {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border: 10px;
+    position: relative;
+
+}
+    
+.favorite_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(255, 255, 255); 
+    border: none; 
+    border-radius: 50%; 
+    padding: 8px; 
+    width: 40px; 
+    height: 40px; 
+    box-shadow: 3px 9px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center; 
+}
+
+.favorite_button:active {
+    transform: scale(0.9); 
+    color: red;
+    background-color: #e9e9e9; 
+
+}
+
+.buy_card_b .house_content {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.buy_card_b .house_title {
+    display: flex;
+    justify-content: space-between; 
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.buy_card_b .house_description {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.buy_card_b .house_description .item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.buy_card_b .house_description .icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* ========= FOOTER ========= */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; 
+    background-color: white; 
+    padding-top: 50px;
+    text-align: left; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    margin-top: 2%;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center; 
+    background-color: white; 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact,
+.social-media,
+.links {
+    display: flex;
+    flex:1;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.contact h4,
+.social-media h4,
+.links h4 {
+    margin-bottom: 10px;
+    color: #004225;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact p,
+.social-media p,
+.links ul {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.links li {
+    margin-bottom: px;
+}
+
+.links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: rgb(73, 73, 73);
+}
+
+.icon {
+    width: 20px; 
+    height: 20px;
+    margin-right: 8px; 
+}
+
+.footer-note {
+    grid-column: 1 / span 3; 
+    text-align: center; 
+    font-size: 0.85rem;
+    color: #000000;
+}
+
+/* ========= SLIDER ========= */
+.slick-slider {
+    width: 96%; 
+    margin: 0 auto; 
+
+}
+
+.slick-slide {
+    box-sizing: border-box;
+    padding: 20px; 
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #004225 !important; 
+}
+
+
+/* ========= RESPONSIVIDADE ========= */
+@media (max-width: 768px) and (min-width:401px) {
+    .header{
+        width: 100%; 
+        max-width: 100vw; 
+        overflow: visible;
+    }
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .navigation.active {
+        display: flex;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: relative;
+        z-index: 101; 
+    }
+
+    .banner {
+        height: 40% !important; 
+        font-size: 1rem; 
+    }
+
+    .banner h2{
+        transform: scale(1.3);
+        padding-top: 60px;
+        padding-right: 10px;
+    }
+
+    .house_card_hp {
+        margin: 10px auto; 
+        background-color: rgba(245, 245, 220, 0.9); 
+    }
+
+    .footer-container {
+        padding-left:0 !important;
+        gap:10px !important;
+    }
+
+    .contact,
+    .social-media,
+    .links {
+        align-items: left;
+        text-align: left;
+        width: 100%;
+    }
+    .slick-slide {
+        box-sizing: border-box;
+        padding: 10px; 
+    }
+}
+
+
+@media (max-width:400px) {
+    .header{
+        width: 100%; 
+        max-width: 100vw; 
+        overflow: visible;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .navigation.active {
+        display: flex;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block ;
+        position: relative ;
+        z-index: 101; 
+    }
+
+    .banner {
+        height: 50%; 
+        font-size: 1rem; 
+    }
+
+    .banner div {
+        padding-top: 130px;
+        padding-left: 100px;
+        padding-right: 0;
+    }
+
+    .banner h2{
+        transform: scale(0.9); 
+
+    }
+
+    .house_card_hp {
+        margin: 10px auto; 
+    }
+
+    .slick-slide {
+        box-sizing: border-box;
+        padding: 20px; 
+    }
+}
+
+@media (max-width:712px) {
+    .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px; 
+        }
+
+    .contact,
+    .social-media,
+    .links {
+        align-items: left;
+        text-align: left;
+        width: 100%;
+    }
+}

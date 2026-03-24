@@ -1,0 +1,227 @@
+.main {
+    background-color: rgb(255, 255, 255) !important;
+    max-width: 100vw; 
+    overflow: hidden; 
+    color: black;
+    padding-bottom: 35px;
+}
+
+.filter_section {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px 30px; 
+    border-radius: 8px;
+    margin: 0 auto; 
+}
+
+.filter_section h2 {
+    color: #004225;
+    font-size: 2.1rem;
+    font-weight: bold;
+    padding-left: 40px; 
+    padding-top: 3%;
+    margin-bottom: 20px; 
+}
+
+.filter_container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 90%;
+    padding: 20px;
+    background: none !important;
+    border-radius: 8px;
+    box-shadow: none !important;
+    margin-left: 2.4%;
+}
+
+.filter_item {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    flex: 1; 
+    max-width: 300px;
+}
+
+.filter_label {
+    font-size: 16;
+    margin-bottom: 5px; 
+}
+
+select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+select:hover {
+    border-color: #007bff;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filter_button {
+    background: #004225; 
+    width: 10%;
+    color: white; 
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-left: 60px;
+    border: none; 
+    border-radius: 15px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.filter_button:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); 
+    transform: scale(1.01); 
+}
+
+.filter_button:active {
+    transform: scale(0.95); 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.slider_container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider_container input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    pointer-events: auto;
+}
+
+.slider_container input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.slider_container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #004225;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -4px; 
+}
+
+.slider_container input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider_container input[type="text"] {
+    width: 100px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #ecf0f1;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider_container input[type="text"]:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+.slider_values {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.house_container_b {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+    margin-left: 4%;
+    margin-right: 2.4%;
+}
+
+.house_container_b p {
+    margin-left: 30px;
+}
+
+
+@media (max-width: 678px) {
+    .filter_section h2 {
+        padding-left: 9px;
+    }
+
+    .filter_button {
+        margin-left: 15px;
+    }
+
+    .filter_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filter_item:nth-child(1), 
+    .filter_item:nth-child(2) {
+        grid-column: span 1;
+        width: 100%; 
+    }
+
+    .filter_item:nth-child(3) {
+        padding-top: 20px;
+        grid-column: span 2;
+        width: 100%;
+        text-align: left;
+    }
+
+    .filter_button {
+        grid-column: span 2;
+        width: 50%; 
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 679px) and (max-width: 1500px) {
+    .filter_button {
+        grid-column: span 2;
+        width: 27%; 
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+    }
+}

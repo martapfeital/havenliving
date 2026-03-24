@@ -1,0 +1,243 @@
+.main {
+    background-color: rgb(255, 255, 255) !important;
+    max-width: 100%;
+    overflow: hidden;
+    color: black;
+    padding-bottom: 35px;
+}
+
+.sell-form {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    margin-left: 2.4%;
+    margin-right: 2.4%;
+}
+
+.sell-title {
+    color: #004225;
+    font-size: 2.1rem;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 3%;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group.full-width {
+    width: 100%;
+}
+
+.input-group label {
+    color: #004225;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.type-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.type-container label {
+    color: #004225;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.type-option-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+}
+
+.type-option {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.type-option input[type="radio"] {
+    display: none;
+}
+
+.type-option label {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-option input[type="radio"]:checked + label {
+    background-color: #bb3c0ec0;
+    border-color: #a0340dbd;
+}
+
+.type-option span {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.type-icon {
+    width: 50px; 
+    height: 50px;
+    object-fit: contain; 
+    margin: auto; 
+    display: block;
+}
+
+.inline-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.inline-group .input-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.parking-group {
+    text-align: center;
+}
+
+.parking-options {
+    display: flex;
+    gap: 10px;
+}
+
+.parking-options button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.parking-options button.active {
+    background-color: #bb3b0e;
+    color: #fff;
+    border-color: #a0340d;
+}
+
+textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.amenities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px; 
+    margin-bottom: 30px;
+    padding-top: 10px; 
+    align-content: space-between;
+}
+
+.amenities-container label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.amenities-container label span {
+    font-size: 1rem;
+}
+
+.amenities-title {
+    color: #004225;
+    text-align: left;
+    font-weight: bold;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #004225;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #004225;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); 
+    transform: scale(1.01); 
+}
+
+@media (max-width: 768px) {
+    .type-option-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px; 
+        justify-content: center; 
+    }
+
+    .type-option {
+        flex: none; 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .type-option label {
+        width: 70px; 
+        height: 70px;
+    }
+
+    .type-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .type-option span {
+        font-size: 0.8rem; 
+    }
+
+    .filter_section h2 {
+        padding-left: 5px;
+    }
+}
