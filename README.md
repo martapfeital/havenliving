@@ -1,32 +1,41 @@
+# HavenLiving 
 
-# Projeto Final Programação para a Internet, Frontend
+A real estate web application where users can browse, buy, sell and favourite properties.
+Built as an academic project for the Web Programming course at ISCTE.
 
+## Team
+- Marta Feital
+- Beatriz Correia
+- Madalena Faias
 
-## Run the application
+## Tech Stack
+- React · JavaScript · CSS
+- Material UI · Bootstrap
+- JSON Server (mock backend)
 
-Install the needed packages and run the app.
+## Getting Started
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed.
+
+### Installation
+Clone the repository and install dependencies:
 
 ```bash
-  npm install
-  npm start
+git clone https://github.com/yourusername/havenliving
+cd havenliving
+npm install --legacy-peer-deps
 ```
-    
-## Folder struture
 
+### Running the app
+Start both frontend and backend with one command:
 
 ```bash
-app
-└── src
-    ├── App.js
-    ├── components
-    │   └── Footer.js
-    │   └── Slider.js
-    │   └── Header.js
-    └── pages
-        ├── HomePage.js
-        ├── ApartmentPage.js
+npm run dev
 ```
 
-- App.js: Front-end React code that manages the different routes of the front end.
-- /components: A folder with the reusable components you will use.
-- /pages: All application pages have their matching file in this folder.
+Then open your browser at **http://localhost:3000**
+
+## Notes
+- The mock backend (`db.json`) was provided by the course professor
+- Backend runs on port 3001, frontend on port 3000
